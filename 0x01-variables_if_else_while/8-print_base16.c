@@ -5,12 +5,12 @@
  * followed by a new line
  * Return: Always 0 (Success)
  */
-
-int main(){
+int main(void)
+{
 	int n;
 	char ch;
 
-	for (n = 0; n < 10; n++)
+	for (n = 48; n < 58; n++)
 	{
 		putchar(n);
 	}
@@ -21,3 +21,5 @@ int main(){
 	putchar('\n');
 	return (0);
 }
+
+
