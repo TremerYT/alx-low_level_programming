@@ -1,13 +1,6 @@
-#include <stdio.h>
+#ifndef FUNCTION_LIKE_MACRO_H
+#define FUNCTION_LIKE_MACRO_H
 
-#define ABS(x) ((x) < 0 ? -(x) : (x))
+#define ABS(x) ((x) < (0) ? -(x) : (x))
 
-int main() {
-    int num = -5;
-    printf("The absolute value of %d is %d\n", num, ABS(num));
-
-    float fnum = -3.14;
-    printf("The absolute value of %.2f is %.2f\n", fnum, ABS(fnum));
-
-    return 0;
-}
+#endif
