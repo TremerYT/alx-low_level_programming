@@ -177,8 +177,8 @@ void print_osabi(unsigned char *e_ident)
 }
 
 /**
- * print_abi - Prints the ABI version of an ELF header.
- * @e_ident: A pointer to an array containing the ELF ABI version.
+ * print_abi - Prints the ABI
+ * @e_ident: A pointer to an array that has abi
  */
 void print_abi(unsigned char *e_ident)
 {
@@ -220,6 +220,10 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
 	}
 }
 
+/**
+ * print_entry
+ * @e_ident
+ */
 void print_entry(unsigned long int e_entry, unsigned char *e_ident)
 {
 	printf(" Entry point address: ");
@@ -239,10 +243,10 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
 }
 
 /**
- * close_elf - Closes an ELF file.
+ * close_elf
  * @elf: The file descriptor of the ELF file.
  *
- * Description: If the file cannot be closed - exit code 98.
+ * no description
  */
 void close_elf(int elf)
 {
@@ -254,6 +258,15 @@ void close_elf(int elf)
 	}
 }
 
+/**
+ * main - Displays the information contained in the
+ * ELF header at the start of an ELF file.
+ * @argc
+ * @argv
+ *
+ * Return: 0 should
+ *
+ */
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 	Elf64_Ehdr *header;
