@@ -8,13 +8,13 @@
 void print_binary(unsigned long int n)
 {
 	int i, count = 0;
-	unsigned long int a;
+	unsigned long int current;
 
 	for (i = sizeof(unsigned long int) * 8; i >= 0; i--)
 	{
-		a = n >> i;
+		current = n >> i;
 
-		if (a & 1)
+		if (current & 1)
 		{
 			_putchar('1');
 			count++;
