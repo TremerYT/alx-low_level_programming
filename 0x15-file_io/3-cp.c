@@ -39,7 +39,7 @@ void close_file(int file_desc)
 
 	if (a == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_desc);
 		exit(100);
 	}
 }
@@ -101,4 +101,3 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
-
