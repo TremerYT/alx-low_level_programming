@@ -12,7 +12,7 @@ unsigned long int hash_djb2(const unsigned char *str)
 	int i;
 
 	hash = 5381;
-	for (;i = *str++;)
+	for (; i = *str++; )
 	{
 		hash = ((hash << 5) + hash) + c;
 	}
