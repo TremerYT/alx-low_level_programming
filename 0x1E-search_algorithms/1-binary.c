@@ -20,7 +20,7 @@ int recursive_search(int *array, size_t size, int value)
 
 	printf("Searching in array");
 
-	for (j= 0; j < size; j++)
+	for (j = 0; j < size; j++)
 		printf("%s %d", (j == 0) ? ":" : ",", array[j]);
 
 	printf("\n");
@@ -59,3 +59,4 @@ int binary_search(int *array, size_t size, int value)
 
 	return (index);
 }
+
